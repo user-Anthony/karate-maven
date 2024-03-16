@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ApiTest" time="6.756" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test\target\test-classes;C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test\target\classes;C:\Users\danil\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\danil\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\danil\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\danil\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\danil\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\danil\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\danil\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\danil\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\danil\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\danil\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\danil\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\danil\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\danil\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\danil\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\danil\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\danil\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\danil\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\danil\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\danil\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\danil\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\danil\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\danil\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\danil\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\danil\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\danil\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\danil\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\danil\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\danil\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\danil\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\danil\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\danil\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\danil\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\danil\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\danil\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\danil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.boot.library.path" value="C:\Users\danil\Downloads\Automatización de Apis\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\danil\AppData\Local\Temp\surefire17811254351294369262\surefirebooter-20240315164438418_3.jar C:\Users\danil\AppData\Local\Temp\surefire17811254351294369262 2024-03-15T16-44-38_156-jvmRun1 surefire-20240315164438418_1tmp surefire_0-20240315164438418_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test\target\test-classes;C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test\target\classes;C:\Users\danil\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\danil\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\danil\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\danil\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\danil\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\danil\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\danil\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\danil\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\danil\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\danil\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\danil\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\danil\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\danil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\danil\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\danil\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\danil\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\danil\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\danil\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\danil\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\danil\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\danil\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\danil\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\danil\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\danil\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\danil\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\danil\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\danil\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\danil\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\danil\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\danil\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\danil\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\danil\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\danil\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\danil\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\danil\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\danil\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\danil\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\danil\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\danil\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\danil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\danil"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Users\danil\Downloads\Automatización de Apis\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\danil\AppData\Local\Temp\surefire17811254351294369262\surefirebooter-20240315164438418_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="user.name" value="danil"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.10+7"/>
+    <property name="localRepository" value="C:\Users\danil\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\danil\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="C:\Users\danil\Downloads\Automatización de Apis\Clase 1\Spring Tools 4\karate-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\danil\Downloads\Automatización de Apis\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/danil/Downloads/Automatización de Apis/sts-4.21.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin/server;C:/Users/danil/Downloads/Automatización de Apis/sts-4.21.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\PICT\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Gradle\gradle-7.6.4\bin;C:\Users\danil\AppData\Local\Microsoft\WindowsApps;C:\Users\danil\AppData\Roaming\npm;C:\Users\danil\AppData\Local\Android\Sdk\platform-tools;C:\Users\danil\AppData\Local\Android\Sdk\tools;C:\Gradle\gradle-7.6.4\bin;;C:\Users\danil\Downloads\Automatización de Apis\sts-4.21.1.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testKarate" classname="examples.ApiTest" time="6.734">
+    <system-out><![CDATA[16:44:41.296 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:44:41.311 [main] DEBUG com.intuit.karate.Suite - waiting for 10 features to complete
+16:44:42.714 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:42.713 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:42.714 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:42.714 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:42.711 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:42.787 [pool-2-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+16:44:43.327 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Oppo","description":"Camara 20 MP","price":999999}
+
+16:44:43.327 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Original iphone","description":"Descripción actualizada","price":8000}
+
+16:44:43.327 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Original iphone","description":"Descripción actualizada","price":8000}
+
+16:44:43.327 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 20","description":"Telefono de alta gama","price":2000}
+
+16:44:43.519 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ff5a9c0e-21f5-40e0-86a7-eced30ebc324","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.519 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"67276529-cae2-492e-a3e9-3668bbf73005","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.519 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"365e85f0-429e-4409-91e1-c97fec89deef","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.519 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"1d09ef6f-afae-4a67-bd79-e7aa2cff666e","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.526 [pool-2-thread-3] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+16:44:43.530 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/1d09ef6f-afae-4a67-bd79-e7aa2cff666e/
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 81
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 55","description":"Telefono de alta gama","price":2000}
+
+16:44:43.531 [pool-2-thread-4] WARN  com.intuit.karate - this thread waited 742 milliseconds for callonce lock: read('nuevo.feature')
+16:44:43.532 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/ff5a9c0e-21f5-40e0-86a7-eced30ebc324/
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 81
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 99","description":"Telefono de alta gama","price":2000}
+
+16:44:43.535 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "sku": "365e85f0-429e-4409-91e1-c97fec89deef",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.535 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.536 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "sku": "365e85f0-429e-4409-91e1-c97fec89deef",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.539 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/api/v1/product/365e85f0-429e-4409-91e1-c97fec89deef/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Foco","description":"Con cable","price":10}
+
+16:44:43.542 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/api/v1/product/1/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Foco","description":"Con cable","price":10}
+
+16:44:43.542 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 20","description":"Telefono de alta gama","price":2000}
+
+16:44:43.554 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ccf6fc02-197d-498c-9cd4-0a368ca82198","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.565 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.572 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 20","description":"Telefono de alta gama","price":2000}
+
+16:44:43.582 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"de18746a-200f-47a2-8c3b-695acd2b5f28","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.593 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.598 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 20","description":"Telefono de alta gama","price":2000}
+
+16:44:43.608 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 65
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Connection: close
+{"sku":"1","status":false,"message":"El producto no fue encontrado"}
+
+16:44:43.617 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"14da1904-77f9-4dc8-9685-319c553f0588","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.638 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 98
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"365e85f0-429e-4409-91e1-c97fec89deef","status":true,"message":"El producto fue actualizado con éxito"}
+
+16:44:43.646 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 114
+2 < 200
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"sku":"1d09ef6f-afae-4a67-bd79-e7aa2cff666e","status":true,"message":"El producto fue actualizado con éxito"}
+
+16:44:43.650 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.650 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.653 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.657 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 2","description":"Telefono de alta gama","price":2000}
+
+16:44:43.659 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Xiaomi 11 note pro","description":"Telefono de alta gama proveniente de china","price":1300}
+
+16:44:43.660 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.665 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 132
+2 < 200
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"sku":"ff5a9c0e-21f5-40e0-86a7-eced30ebc324","status":true,"message":"El producto fue actualizado con éxito"}
+
+16:44:43.665 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 9","description":"Telefono de alta gama proveniente de Rusia","price":5000}
+
+16:44:43.667 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 1","description":"Telefono de alta gama","price":2000}
+
+16:44:43.678 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.683 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 83
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"","description":"Telefono de alta gama proveniente de china","price":1300}
+
+16:44:43.684 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"232bb558-9ba0-4178-b0bb-4b0abe4f698f","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.696 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.699 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"d7555127-b169-4bba-aed1-5754f801172e","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.702 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"El nombre del producto no fue proporcionado"}
+
+16:44:43.702 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 45
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ca922141-9e3c-4e10-b7cc-c9461a902903","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.715 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.717 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.717 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.726 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 67
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"d762db5a-8d4e-4059-a910-74a1e0985c5f","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.736 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+16:44:43.737 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+16:44:43.739 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Clavo","description":"Acero inolvidalble","price":0}
+
+16:44:43.743 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.744 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Taladro Magnétivo","description":"","price":899}
+
+16:44:43.749 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Oppo","description":"Camara 20 MP","price":999999}
+
+16:44:43.754 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"El precio del producto no fue proporcionado"}
+
+16:44:43.767 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.769 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Oppo","description":"Camara 20 MP","price":999999}
+
+16:44:43.770 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+16:44:43.774 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 999","description":"Alta Gama","price":999}
+
+16:44:43.781 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"21cf37f6-6e1b-4e36-ab2e-9c17d17ff7d6","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.783 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.784 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+16:44:43.784 [pool-2-thread-3] WARN  com.intuit.karate - this thread waited 26 milliseconds for callonce lock: read('nuevo.feature')
+16:44:43.786 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "sku": "21cf37f6-6e1b-4e36-ab2e-9c17d17ff7d6",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.787 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "sku": "21cf37f6-6e1b-4e36-ab2e-9c17d17ff7d6",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.788 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 998","description":"Alta Gama","price":998}
+
+16:44:43.790 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8081/api/v1/product/abc/
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:43.791 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8081/api/v1/product/21cf37f6-6e1b-4e36-ab2e-9c17d17ff7d6/
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:43.797 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 47
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"f78322e7-d69e-4c83-be5e-0d6706fd380e","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.799 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"cf93e2ba-bc0b-43cc-83c5-3673363ac40e","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.799 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+16:44:43.801 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "sku": "f78322e7-d69e-4c83-be5e-0d6706fd380e",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.806 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8081/api/v1/product/f78322e7-d69e-4c83-be5e-0d6706fd380e/
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:43.807 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"e048caf7-0f9a-4660-ae8e-70f2fd05277c","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.808 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.817 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.829 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+16:44:43.845 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Oppo","description":"Camara 20 MP","price":999999}
+
+16:44:43.850 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Connection: close
+{"count":0,"status":false,"message":"El producto no fue encontrado"}
+
+16:44:43.851 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 45
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"count":1,"status":true,"message":"El producto fue eliminado con éxito"}
+
+16:44:43.862 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.862 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"d9db2737-2de7-40d1-b95d-81029ab8b8c4","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.865 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+16:44:43.865 [pool-2-thread-5] WARN  com.intuit.karate - this thread waited 33 milliseconds for callonce lock: read('nuevo.feature')
+16:44:43.866 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 75
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"count":1,"status":true,"message":"El producto fue eliminado con éxito"}
+
+16:44:43.868 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "sku": "d9db2737-2de7-40d1-b95d-81029ab8b8c4",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.869 [pool-2-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+16:44:43.870 [pool-2-thread-5] INFO  com.intuit.karate - [print] {
+  "sku": "d9db2737-2de7-40d1-b95d-81029ab8b8c4",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.872 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/1/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:43.877 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:44:43.880 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Oppo","description":"Camara 20 MP","price":999999}
+
+16:44:43.882 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/d9db2737-2de7-40d1-b95d-81029ab8b8c4/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:43.887 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+16:44:43.897 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0eef6672-69ce-4456-9c4d-1f12ec5d088f","status":true,"message":"El producto fue creado con éxito!"}
+
+16:44:43.897 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":16,"name":"Oppo","sku":"d9db2737-2de7-40d1-b95d-81029ab8b8c4","description":"Camara 20 MP","price":999999.0}],"status":true,"message":"El producto fue encontrado"}
+
+16:44:43.899 [pool-2-thread-3] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+16:44:43.900 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "sku": "0eef6672-69ce-4456-9c4d-1f12ec5d088f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.900 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "sku": "0eef6672-69ce-4456-9c4d-1f12ec5d088f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+16:44:43.902 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/api/v1/product/0eef6672-69ce-4456-9c4d-1f12ec5d088f/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 1","description":"Telefono de alta gama","price":1}
+
+16:44:43.905 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/api/v1/product/0eef6672-69ce-4456-9c4d-1f12ec5d088f/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Datatable 2","description":"Telefono de alta gama","price":2}
+
+16:44:43.917 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0eef6672-69ce-4456-9c4d-1f12ec5d088f","status":true,"message":"El producto fue actualizado con éxito"}
+
+16:44:43.924 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 15 Mar 2024 21:44:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0eef6672-69ce-4456-9c4d-1f12ec5d088f","status":true,"message":"El producto fue actualizado con éxito"}
+
+---------------------------------------------------------
+feature: classpath:examples/users/actualizar.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 1.7534
+---------------------------------------------------------
+
+16:44:44.983 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 10 (9 remaining) classpath:examples/users/actualizar.feature
+---------------------------------------------------------
+feature: classpath:examples/users/actualizar_taller.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 1.7167
+---------------------------------------------------------
+
+16:44:45.211 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 10 (8 remaining) classpath:examples/users/actualizar_taller.feature
+---------------------------------------------------------
+feature: classpath:examples/users/crear.feature
+scenarios:  6 | passed:  6 | failed:  0 | time: 0.9209
+---------------------------------------------------------
+
+16:44:45.443 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 10 (7 remaining) classpath:examples/users/crear.feature
+---------------------------------------------------------
+feature: classpath:examples/users/crear_taller.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 0.2212
+---------------------------------------------------------
+
+16:44:45.585 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 10 (6 remaining) classpath:examples/users/crear_taller.feature
+---------------------------------------------------------
+feature: classpath:examples/users/eliminar.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.1497
+---------------------------------------------------------
+
+16:44:45.670 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 10 (5 remaining) classpath:examples/users/eliminar.feature
+---------------------------------------------------------
+feature: classpath:examples/users/eliminar_taller.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.2441
+---------------------------------------------------------
+
+16:44:45.733 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 10 (4 remaining) classpath:examples/users/eliminar_taller.feature
+---------------------------------------------------------
+feature: classpath:examples/users/insertar.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.0566
+---------------------------------------------------------
+
+16:44:45.794 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 10 (3 remaining) classpath:examples/users/insertar.feature
+---------------------------------------------------------
+feature: classpath:examples/users/listar_taller.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1743
+---------------------------------------------------------
+
+16:44:45.911 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 10 (2 remaining) classpath:examples/users/listar_taller.feature
+---------------------------------------------------------
+feature: classpath:examples/users/modificar.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1028
+---------------------------------------------------------
+
+16:44:46.000 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 10 (1 remaining) classpath:examples/users/modificar.feature
+Karate version: 1.4.1
+======================================================
+elapsed:   5.97 | threads:    5 | thread time: 5.34 
+features:     9 | skipped:    1 | efficiency: 0.18
+scenarios:   24 | passed:    24 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.4.1
+file:///C:/Users/danil/Downloads/Automatización%20de%20Apis/Clase%201/Spring%20Tools%204/karate-test/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
